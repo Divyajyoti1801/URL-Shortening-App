@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header class="header">
+    <img src="images/logo.svg" alt="Shortly Logo" class="header__logo">
+    <img src="images/icon-menu.svg" alt="Mobile Menu Icon" class="header__mobile-navigation">
+    <div class="header__navigation">
+      <nav class="header__navigation-list">
+        <a href="#" class="header__navigation-list--link">Features</a>
+        <a href="#" class="header__navigation-list--link">Pricing</a>
+        <a href="#" class="header__navigation-list--link">Resources</a>
+      </nav>
+      <div class="header__navigation-cta">
+        <a href="#" class="header__navigation-cta--link">Login</a>
+        <button class="header__navigation-cta--btn">Sign Up</button>
+      </div>
+    </div>
+    
+  </header>
 
-  Features
+  <!-- Features
   Pricing
   Resources
 
@@ -75,11 +85,8 @@
   About
   Our Team
   Careers
-  Contact
+  Contact -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

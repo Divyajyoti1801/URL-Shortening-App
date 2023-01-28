@@ -1,0 +1,77 @@
+
+//Text Based Variables 
+$font-family:'Poppins', sans-serif;
+$font-size-sm:1.4rem;
+$font-size-rg:1.6rem;
+$font-size-lg:1.8rem;
+$font-size-card-header:3rem;
+$font-size-sub-header: 3.6rem;
+$font-size-header: 7rem;
+$font-weight-light:300;
+$font-weight-regular:400;
+$font-weight-medium:500;
+$font-weight-bold:700;
+
+//Color Based Variables
+$color-Primary-cyan:hsl(180, 66%, 49%);
+$color-Primary-dark-violet:hsl(257, 27%, 26%);
+$color-Secondary-red: hsl(0, 87%, 67%);
+$color-Neutral-gray: hsl(0, 0%, 75%);
+$color-Grayish-Violet:hsl(257, 7%, 63%);
+$color-very-dark-blue: hsl(255, 11%, 22%);
+$color-very-dark-violet: hsl(260, 8%, 14%);
+
+//Break Point Based Variables
+$bp-mobile:23.4375em;
+$bp-mobile-xr:25.875em;
+$bp-ipad-air:51.25em;
+$bp-surface-pro:57em;
+$bp-nest-hub:64em;
+$bp-nest-hub-max:80em;
+
+
+//Mixin Function
+
+@mixin flexfunc($type,$justify,$align){
+    display: flex;
+    flex-direction: $type;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin mobileScreen{
+    @media only screen and(max-width:$bp-mobile){
+        @content;
+    }
+}
+
+@mixin mobileXRScreen{
+    @media only screen and (max-width:$bp-mobile-xr){
+        @content;
+    }
+}
+
+@mixin tabletIpadAir{
+    @media only screen and (max-width:$bp-ipad-air){
+        @content;
+    }
+}
+
+@mixin tabletSurfacePro{
+    @media only screen and (max-width:$bp-surface-pro){
+        @content;
+    }
+}
+
+@mixin desktopNestHub{
+    @media only screen and (max-width:$bp-nest-hub){
+        @content;
+    }
+}
+
+@mixin desktopNestHubMax{
+    @media only screen and (max-width:$bp-nest-hub-max){
+        @content;
+    }
+}
+

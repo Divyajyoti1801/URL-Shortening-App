@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 80em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 64em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 57em) {
+  html {
+    font-size: 52%;
+  }
+}
+@media only screen and (max-width: 51.25em) {
+  html {
+    font-size: 52%;
+  }
+}
+@media only screen and (max-width: 25.875em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 75%);
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 15.8rem;
+}
+.header__logo {
+  margin-right: 3.8rem;
+}
+.header__mobile-navigation {
+  display: none;
+}
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header__navigation-list--link {
+  color: hsl(257deg, 7%, 63%);
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+.header__navigation-list--link:hover, .header__navigation-list--link:active {
+  color: hsl(260deg, 8%, 14%);
+}
+.header__navigation-list--link:not(:last-child) {
+  margin-right: 2.6rem;
+}
+.header__navigation-cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__navigation-cta--link {
+  color: hsl(257deg, 7%, 63%);
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 3rem;
+  transition: all 0.25s ease;
+}
+.header__navigation-cta--link:hover, .header__navigation-cta--link:active {
+  color: hsl(260deg, 8%, 14%);
+}
+.header__navigation-cta--btn {
+  padding: 1rem 2rem;
+  color: white;
+  background: hsl(180deg, 66%, 49%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+.header__navigation-cta--btn:hover, .header__navigation-cta--btn:active {
+  background: hsl(180deg, 89%, 71%);
+}
+@media only screen and (max-width: 57em) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 3.6rem 2.2rem;
+  }
+  .header__mobile-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__navigation {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3.8rem 2.4rem;
+    width: 90%;
+    position: absolute;
+    background: hsl(257deg, 27%, 26%);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .header__navigation-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid hsl(257deg, 7%, 63%);
+    text-align: center;
+  }
+  .header__navigation-list--link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  .header__navigation-list--link:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3.8rem;
+  }
+  .header__navigation-list--link:last-child {
+    margin-bottom: 3.8rem;
+  }
+  .header__navigation-cta {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3.2rem;
+  }
+  .header__navigation-cta--link {
+    color: white;
+    margin-right: 0;
+    margin-bottom: 2.4rem;
+  }
+  .header__navigation-cta--btn {
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+html{
+    font-size:62.5%;
+    
+    @include desktopNestHubMax{
+        font-size: 55%;
+    }
+    
+    @include desktopNestHub{
+        font-size: 55%;
+    }
+    
+    @include tabletSurfacePro{
+        font-size: 52%;
+    }
+    
+    @include tabletIpadAir{
+        font-size: 52%;
+    }
+    
+    @include mobileXRScreen{
+        font-size: 50%;
+    }
+    
+    @include mobileScreen{
+        font-size: 50%;
+    }
+    
+}
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: $font-family;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-light;
+    color:$color-Neutral-gray;
+    box-sizing: border-box;
+}

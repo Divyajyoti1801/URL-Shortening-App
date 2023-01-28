@@ -1,0 +1,117 @@
+.header{
+    width: 100%;
+    @include flexfunc(row,center,center);
+    padding: 5rem 15.8rem;
+    &__logo{
+        margin-right: 3.8rem;
+    }
+    &__mobile-navigation{
+        display: none;
+    }
+    &__navigation{
+        @include flexfunc(row,space-between,center);
+        width: 100%;
+        &-list{
+            @include flexfunc(row,center,center);
+            &--link{
+               color:$color-Grayish-Violet;
+               cursor: pointer;
+               font-weight: $font-weight-medium;
+               transition: all .25s ease;
+               &:hover,&:active{
+                color:$color-very-dark-violet;
+               }
+               &:not(:last-child){
+                margin-right: 2.6rem;
+               }
+            }
+        }
+        &-cta{
+            @include flexfunc(row,space-between,center);
+            &--link{
+                color: $color-Grayish-Violet;
+                font-weight: $font-weight-medium;
+                cursor: pointer;
+                margin-right: 3rem;
+                transition: all .25s ease;
+                &:hover,&:active{
+                    color:$color-very-dark-violet;
+               }
+            }
+            &--btn{
+                padding: 1rem 2rem;
+                color:white;
+                background: $color-Primary-cyan;
+                font-family: $font-family;
+                font-size: $font-size-lg;
+                font-weight: $font-weight-medium;
+                cursor: pointer;
+                border: none;
+                border-radius: 20px;
+                transition: all .25s ease;
+                &:hover,&:active{
+                    background: hsl(180, 89%, 71%);
+                }
+            }
+        }
+    }
+    @include tabletSurfacePro{
+        @include flexfunc(row,space-between,center);
+        position: relative;
+        padding: 3.6rem 2.2rem;
+        &__mobile-navigation{
+            @include flexfunc(row,center,center);
+        }
+        &__navigation{
+            top:100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 3.8rem 2.4rem;
+            width: 90%;
+            position: absolute;
+            background: $color-Primary-dark-violet;
+            border-radius: 10px;
+            transition: all .3s ease;
+            @include flexfunc(column,center,center);
+            display: none;
+            &-list{
+                @include flexfunc(column,center,center);
+                width: 100%;
+                border-bottom: 1px solid $color-Grayish-Violet;
+                text-align: center;
+                &--link{
+                    @include flexfunc(row,center,center);
+                    text-align: center;
+                    color:white;
+                    &:not(:last-child){
+                        margin-right: 0;
+                        margin-bottom: 3.8rem;
+                    }
+                    &:last-child{
+                        margin-bottom: 3.8rem;
+                    }
+                    
+                }
+            }
+            &-cta{
+                flex-direction: column;
+                width: 100%;
+                margin-top: 3.2rem;
+                &--link{
+                    color:white;
+                    margin-right: 0;
+                    margin-bottom: 2.4rem;
+                }
+                &--btn{
+                    width: 100%;
+                }
+            }
+
+        }
+    }      
+}
+
+.hidden{
+    display: none;
+}
+
