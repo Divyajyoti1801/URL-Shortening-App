@@ -40,17 +40,17 @@
             }
             &--btn{
                 padding: 1rem 2rem;
-                color:white;
+                color:$color-white;
                 background: $color-Primary-cyan;
                 font-family: $font-family;
                 font-size: $font-size-lg;
                 font-weight: $font-weight-medium;
                 cursor: pointer;
                 border: none;
-                border-radius: 20px;
+                border-radius: $border-radius;
                 transition: all .25s ease;
                 &:hover,&:active{
-                    background: hsl(180, 89%, 71%);
+                    background: $color-hover-btn;
                 }
             }
         }
@@ -70,7 +70,7 @@
             width: 90%;
             position: absolute;
             background: $color-Primary-dark-violet;
-            border-radius: 10px;
+            border-radius: $border-radius-rectangle;
             transition: all .3s ease;
             @include flexfunc(column,center,center);
             display: none;
@@ -82,7 +82,7 @@
                 &--link{
                     @include flexfunc(row,center,center);
                     text-align: center;
-                    color:white;
+                    color:$color-white;
                     &:not(:last-child){
                         margin-right: 0;
                         margin-bottom: 3.8rem;
@@ -98,7 +98,7 @@
                 width: 100%;
                 margin-top: 3.2rem;
                 &--link{
-                    color:white;
+                    color:$color-white;
                     margin-right: 0;
                     margin-bottom: 2.4rem;
                 }

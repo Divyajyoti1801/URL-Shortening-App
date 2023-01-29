@@ -1,0 +1,43 @@
+.hero{
+    @include flexfunc(row,center,center);
+    padding-left: $padding-standard-left;
+    padding-bottom: 14.8rem;
+    &__content{
+        @include flexfunc(column,center,flex-start);
+        &--header{
+            font-size: $font-size-header;
+            color:$color-very-dark-violet;
+            text-align: left;
+            margin-bottom: 1.8rem;
+            line-height: 8rem;
+        }
+        &--text{
+            color:$color-Grayish-Violet;
+            font-size: $font-size-lg;
+            text-align: left;
+            line-height:$line-height;
+            margin-bottom: 3.6rem;
+            width: 80%;
+        }
+        &--cta{
+            color:$color-white;
+            padding: 1.6rem 3.6rem;
+            background: $color-Primary-cyan;
+            cursor:pointer;
+            font-family: $font-family;
+            font-size: $font-size-lg;
+            font-weight: $font-weight-medium;
+            border:none;
+            border-radius: $border-radius;
+            transition: all .25s ease;
+            &:active,&:hover{
+                background-color: $color-hover-btn;
+            }
+        }
+    }
+    &__image{
+        &--img{
+            // transform: translateX(20%);
+        }
+    }
+}

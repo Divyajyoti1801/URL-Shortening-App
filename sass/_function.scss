@@ -1,0 +1,90 @@
+.function{
+    @include flexfunc(column,center,center);
+    background: hsl(0, 15%, 94%);
+    padding: 0 $padding-standard-right;
+    padding-bottom: 11.6rem;
+    &__input{
+        @include flexfunc(row,center,center);
+        padding: 5.2rem 6rem;
+        width: 100%;
+        position: relative;
+        background: $color-Primary-dark-violet;
+        border-radius: $border-radius-rectangle;
+        transform: translateY(-50%);
+        &--input-text{
+            width: 82%;
+            padding: 1.8rem 3rem;
+            margin-right: 2.4rem;
+            font-family: $font-family;
+            font-size: $font-size-lg;
+            font-weight: $font-weight-regular;
+            color:$color-very-dark-blue;
+            border:2px solid transparent;
+            border-radius: $border-radius-rectangle;
+            outline: none;
+            &::placeholder{
+                color:$color-Grayish-Violet;
+            }
+        }
+        &--error-text{
+            position: absolute;
+            bottom: 14%;
+            left:6%;
+            color:$color-Secondary-red;
+            font-size: $font-size-sm;
+            font-weight: $font-weight-regular;
+        }
+        &--cta{
+            width: 18%;
+            padding: 1.8rem 3rem;
+            font-family: $font-family;
+            font-size: $font-size-lg;
+            font-weight: $font-weight-medium;
+            color:$color-white;
+            background: $color-Primary-cyan;
+            transition: all .25s ease;
+            border:none;
+            border-radius: $border-radius-rectangle;
+            &:active,&:hover{
+                background: $color-hover-btn;
+            }
+        }
+    }
+    &__results{
+        width: 100%;
+        @include flexfunc(column,center,center);
+        transform: translateY(-10%);
+        &--result{
+            @include flexfunc(row,space-between,center);
+            margin-top: 2.4rem;
+            padding: 1.2rem 2.6rem;
+            width: 100%;
+            background: $color-white;
+            border-radius: $border-radius-rectangle;
+            &--link{
+                color:$color-very-dark-violet;
+                font-weight: $font-weight-medium;
+            }
+            &--cta{
+                @include flexfunc(row,center,center);
+                &--shorten-link{
+                    margin-right: 2.4rem;
+                    color:$color-Primary-cyan;
+                    font-weight: $font-weight-regular;
+                }
+                &--btn{
+                    padding: 1.6rem 2.8rem;
+                    background: $color-Primary-cyan;
+                    color:$color-white;
+                    font-family: $font-family;
+                    font-size: $font-size-rg;
+                    font-weight: $font-weight-bold;
+                    border: none;
+                    border-radius:$border-radius-rectangle;
+                }
+            }
+        }
+        
+    }
+}
+
