@@ -74,6 +74,7 @@
             transition: all .3s ease;
             @include flexfunc(column,center,center);
             display: none;
+            z-index: 3;
             &-list{
                 @include flexfunc(column,center,center);
                 width: 100%;

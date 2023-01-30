@@ -14,6 +14,7 @@
         &--text{
             color:$color-Grayish-Violet;
             font-size: $font-size-lg;
+            font-weight: $font-weight-medium;
             text-align: left;
             line-height:$line-height;
             margin-bottom: 3.6rem;
@@ -38,6 +39,37 @@
     &__image{
         &--img{
             // transform: translateX(20%);
+        }
+    }
+
+    @include mobileXRScreen{
+        padding: 0 $padding-mobile-left;
+        padding-bottom: 16rem;
+        flex-direction: column-reverse;
+        &__content{
+            
+            align-items: center;
+            width: 100%;
+            &--header{
+                width: 100%;
+                text-align: center;
+            }
+            &--text{
+                width: 100%;
+                text-align: center;
+                width: 80%;
+                line-height: $line-height;
+            }
+        }
+        &__image{
+            @include flexfunc(row,center,center);
+            margin-bottom: 4.2rem;
+            &--img{
+                width: 120%;
+                height: 120%;
+                transform: translateX(10%);
+               
+            }
         }
     }
 }

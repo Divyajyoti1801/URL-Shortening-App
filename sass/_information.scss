@@ -19,4 +19,11 @@
             font-weight: $font-weight-regular;
         }
     }
+
+    @include mobileXRScreen{
+        padding: 0 $padding-mobile-left;
+        &__header{
+           width: 100%; 
+        }
+    }
 }
