@@ -1,0 +1,96 @@
+.footer{
+    @include flexfunc(row,space-between,flex-start);
+    padding: 7rem $padding-standard-right;
+    background: $color-very-dark-violet;
+
+    &__features{
+        @include flexfunc(column,center,flex-start);
+        &--header{
+            color: $color-white;
+            font-weight: $font-weight-bold;
+            font-size:$font-size-lg;
+            margin-bottom: 2.8rem;
+        }
+        &--link{
+            color:$color-Grayish-Violet;
+            text-decoration: none;
+            font-weight: $font-weight-light;
+            font-size: $font-size-rg;
+            cursor:pointer;
+
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+            &:hover{
+                color:$color-Primary-cyan;
+            }
+        }
+    }
+    
+    &__Resources{
+         @include flexfunc(column,center,flex-start);
+        margin-right: 7rem;
+        &--header{
+            color: $color-white;
+            font-weight: $font-weight-bold;
+            font-size:$font-size-lg;
+            margin-bottom: 2.8rem;
+        }
+        &--link{
+            color:$color-Grayish-Violet;
+            text-decoration: none;
+            font-weight: $font-weight-light;
+            font-size: $font-size-rg;
+            cursor:pointer;
+
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+            &:hover{
+                color:$color-Primary-cyan;
+            }
+        }
+    }
+    
+    &__Company{
+        @include flexfunc(column,center,flex-start);
+        margin-right: 7rem;
+        &--header{
+            color: $color-white;
+            font-weight: $font-weight-bold;
+            font-size:$font-size-lg;
+            margin-bottom: 2.8rem;
+        }
+        &--link{
+            color:$color-Grayish-Violet;
+            text-decoration: none;
+            font-weight: $font-weight-light;
+            font-size: $font-size-rg;
+            cursor:pointer;
+
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+            &:hover{
+                color:$color-Primary-cyan;
+            }
+        }
+    }
+    
+    &__social{
+        height: 100%;
+        @include flexfunc(row,center,center);
+        &--link{
+            text-decoration: none;
+            &:not(:last-child){
+                margin-right: 2.2rem;
+            }
+        }
+        
+    }
+    
+    @include mobileXRScreen{
+        flex-direction: row;
+        padding: 4.8rem $padding-mobile-right;
+    }
+}

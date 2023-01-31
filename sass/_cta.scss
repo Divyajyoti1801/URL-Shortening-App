@@ -1,0 +1,25 @@
+.cta{
+    @include flexfunc(column,center,center);
+    padding: 5.6rem $padding-standard-right;
+    background: $color-Primary-dark-violet;
+
+    &__header{
+        color:$color-white;
+        font-size: $font-size-sub-header;
+        margin-bottom: 3.2rem;
+    }
+    &__btn{
+        background: $color-Primary-cyan;
+        color:$color-white;
+        border:none;
+        font-weight:$font-weight-bold;
+        font-family: $font-family;
+        font-size: $font-size-rg;
+        border-radius: $border-radius;
+        padding: 1.8rem 4rem;
+    }
+    @include mobileXRScreen{
+        padding: 9rem $padding-mobile-left;
+        width: 100%;
+    }
+}

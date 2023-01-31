@@ -1,10 +1,10 @@
 .information{
     @include flexfunc(column,center,center);
-    padding: 0 $padding-standard-left;
+    padding: 0 $padding-standard-left 12rem $padding-standard-right;
     background:hsl(0, 15%, 94%);
     &__header{
         @include flexfunc(column,center,center);
-        margin-bottom: 5.8rem;
+        margin-bottom: 9.6rem;
         width: 44%;
         &--heading{
             color:$color-Primary-dark-violet;
@@ -20,10 +20,76 @@
         }
     }
 
+    &__cards{
+        width: 100%;
+        @include flexfunc(row,center,center);
+        position: relative;
+        &--line{
+            width: 100%;
+            padding: 1rem;
+            background: $color-Primary-cyan;
+            position: absolute;
+            z-index: 0;
+        }
+        &--card{
+            background:white;
+            padding: 0 3rem 4rem 3rem;
+            z-index: 2;
+            &--image{
+                @include flexfunc(row,center,center);
+                background:$color-Primary-dark-violet;
+                border-radius: 100px;
+                height: 9rem;
+                width: 9rem;
+                transform: translateY(-50%);
+            }
+            &--heading{
+                color:$color-Primary-dark-violet;
+                font-weight: $font-weight-bold;
+                margin-bottom: 2rem;
+            }
+            &--content{
+                font-weight: $font-weight-medium;
+                font-size: $font-size-rg;
+            }
+            &:not(:last-child){
+                margin-right: 2.8rem;
+            }
+            &--1{
+                margin-bottom: 4.2rem;
+            }
+            &--3{
+                margin-top: 4.2rem;
+            }
+        }
+
+    }
+
     @include mobileXRScreen{
-        padding: 0 $padding-mobile-left;
+        padding: 0 $padding-mobile-left 8rem $padding-mobile-right;
         &__header{
            width: 100%; 
+        }
+        &__cards{
+            flex-direction: column;
+            &--line{
+                width:0;
+                height: 100%;
+            }
+            &--card{
+                &:not(:last-child){
+                    margin-right: 0;
+                }
+                &--1{
+                    margin-bottom: 0;
+                }
+                &--2{
+                    margin-top: 9rem;
+                }
+                &--3{
+                    margin-top: 9rem;
+                }
+            }
         }
     }
 }
