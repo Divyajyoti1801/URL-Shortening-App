@@ -25,7 +25,14 @@
             &::placeholder{
                 color:$color-Grayish-Violet;
             }
+            &-error{
+                outline: 3px solid $color-Secondary-red;
+                    &::placeholder{
+                        color:$color-Secondary-red;
+                    }
+            }
         }
+        
         &--error-text{
             position: absolute;
             bottom: 14%;
@@ -33,6 +40,7 @@
             color:$color-Secondary-red;
             font-size: $font-size-sm;
             font-weight: $font-weight-regular;
+            display: none;
         }
         &--cta{
             width: 18%;
@@ -45,6 +53,7 @@
             transition: all .25s ease;
             border:none;
             border-radius: $border-radius-rectangle;
+            cursor: pointer;
             &:active,&:hover{
                 background: $color-hover-btn;
             }
@@ -81,10 +90,31 @@
                     font-weight: $font-weight-bold;
                     border: none;
                     border-radius:$border-radius-rectangle;
+                    cursor: pointer;
+                    &:hover{
+                        background: $color-hover-btn;
+                    }
                 }
             }
         }
         
+    }
+    @include desktopNestHub{
+        &__input{
+            &--input-text{
+                width: 76%;
+            }
+            &--error-text{
+                left: 8%;
+            }
+            &--cta{
+                width: 24%;
+            }
+        }
+    }
+
+    @include tabletIpadAir{
+        padding: 0 $padding-mobile-right;
     }
     @include mobileXRScreen{
         padding: 0 $padding-mobile-left;

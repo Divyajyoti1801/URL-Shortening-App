@@ -44,11 +44,13 @@
                 transform: translateY(-50%);
             }
             &--heading{
+                width: 100%;
                 color:$color-Primary-dark-violet;
                 font-weight: $font-weight-bold;
                 margin-bottom: 2rem;
             }
             &--content{
+                width: 100%;
                 font-weight: $font-weight-medium;
                 font-size: $font-size-rg;
             }
@@ -65,18 +67,51 @@
 
     }
 
-    @include mobileXRScreen{
-        padding: 0 $padding-mobile-left 8rem $padding-mobile-right;
-        &__header{
+    @include desktopNestHub{
+        &__cards{
+            &--card{
+               align-items: center;
+                &--image{
+                    margin: 0 auto;
+                }
+                &--heading{
+                    width: 100%;
+                    text-align: center;
+                    font-size: $font-size-lg;
+                }
+                &--content{
+                    width: 100%;
+                    font-size: $font-size-sm;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    @include tabletSurfacePro{
+       &__header{
            width: 100%; 
         }
         &__cards{
             flex-direction: column;
+            align-items: center;
             &--line{
                 width:0;
                 height: 100%;
             }
             &--card{
+                align-items: center;
+                &--image{
+                    margin: 0 auto;
+                }
+                &--heading{
+                    width: 100%;
+                    text-align: center;
+                }
+                &--content{
+                    width: 100%;
+                    text-align: center;
+                }
                 &:not(:last-child){
                     margin-right: 0;
                 }
@@ -90,6 +125,13 @@
                     margin-top: 9rem;
                 }
             }
+        }
+    }
+
+    @include mobileXRScreen{
+        padding: 0 $padding-mobile-left 8rem $padding-mobile-right;
+        &__header{
+           width: 100%; 
         }
     }
 }
