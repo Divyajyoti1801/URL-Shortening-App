@@ -11,6 +11,9 @@
         background: $color-Primary-dark-violet;
         border-radius: $border-radius-rectangle;
         transform: translateY(-50%);
+        background-image: url('../images/bg-shorten-desktop.svg');
+        background-repeat: none;
+        background-size: cover;
         &--input-text{
             width: 82%;
             padding: 1.8rem 3rem;
@@ -115,10 +118,12 @@
 
     @include tabletIpadAir{
         padding: 0 $padding-mobile-right;
+        
     }
     @include mobileXRScreen{
         padding: 0 $padding-mobile-left;
         &__input{
+            background-image: url('../images/bg-shorten-mobile.svg');
             flex-direction: column;
             &--input-text{
                 width: 100%;

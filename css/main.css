@@ -340,6 +340,9 @@ body {
   background: hsl(257deg, 27%, 26%);
   border-radius: 10px;
   transform: translateY(-50%);
+  background-image: url("../images/bg-shorten-desktop.svg");
+  background-repeat: none;
+  background-size: cover;
 }
 .function__input--input-text {
   width: 82%;
@@ -456,6 +459,7 @@ body {
     padding: 0 2.2rem;
   }
   .function__input {
+    background-image: url("../images/bg-shorten-mobile.svg");
     flex-direction: column;
   }
   .function__input--input-text {
@@ -654,6 +658,9 @@ body {
   align-items: center;
   padding: 5.6rem 15.8rem;
   background: hsl(257deg, 27%, 26%);
+  background-image: url("../images/bg-boost-desktop.svg");
+  background-repeat: none;
+  background-size: cover;
 }
 .cta__header {
   color: #fff;
@@ -673,6 +680,7 @@ body {
 @media only screen and (max-width: 25.875em) {
   .cta {
     padding: 9rem 2.2rem;
+    background-image: url("../images/bg-boost-mobile.svg");
     width: 100%;
   }
 }

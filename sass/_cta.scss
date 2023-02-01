@@ -2,6 +2,9 @@
     @include flexfunc(column,center,center);
     padding: 5.6rem $padding-standard-right;
     background: $color-Primary-dark-violet;
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-repeat: none;
+    background-size: cover;
 
     &__header{
         color:$color-white;
@@ -20,6 +23,7 @@
     }
     @include mobileXRScreen{
         padding: 9rem $padding-mobile-left;
+        background-image: url('../images/bg-boost-mobile.svg');
         width: 100%;
     }
 }

@@ -61,7 +61,6 @@ function__btn.addEventListener('click', async(e) => {
         
         encodedParams.append("url", function__input.value);
         const {result_url} = await fetch('https://url-shortener-service.p.rapidapi.com/shorten', options).then(response => response.json()).then(data => data);
-        console.log(result_url);
         function__results.innerHTML = generateHTML(function__input.value, result_url);
         function__input.value = '';
     }
